@@ -30,7 +30,7 @@ public class OrderProducer {
             .type("struct")
             .fields(fields)
             .optional(false)
-            .name("orders")
+            .name("orders2")
             .build();
 
     public OrderDto send(String topic, OrderDto orderDto) {

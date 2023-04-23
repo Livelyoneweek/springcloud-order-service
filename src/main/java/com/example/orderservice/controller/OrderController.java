@@ -49,8 +49,8 @@ public class OrderController {
 
 
         //카프카에 주문 전달, 프로듀서 역할
-        kafkaProducer.send("example-catalog-topic", orderDto);
-        orderProducer.send("orders", orderDto);
+        kafkaProducer.send("example-catalog-topic", orderDto); // 카탈로그 서비스와 토픽 연결
+        orderProducer.send("orders2", orderDto); // order서비스 주문 저장
 
         ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
 
