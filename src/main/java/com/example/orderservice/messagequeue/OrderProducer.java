@@ -19,9 +19,9 @@ public class OrderProducer {
     private final KafkaTemplate kafkaTemplate;
 
     List<Field> fields =  Arrays.asList(
-            new Field("String",true,"order_id"),
-            new Field("String",true,"user_id"),
-            new Field("String",true,"product_id"),
+            new Field("string",true,"order_id"),
+            new Field("string",true,"user_id"),
+            new Field("string",true,"product_id"),
             new Field("int32",true,"qty"),
             new Field("int32",true,"unit_price"),
             new Field("int32",true,"total_price"));
