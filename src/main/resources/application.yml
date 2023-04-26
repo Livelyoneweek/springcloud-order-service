@@ -44,3 +44,10 @@ eureka:
 logging:
   level:
     com.example.orderservice: DEBUG
+
+#actuator 사용할 메소드 등록
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, httptrace, info, metrics, prometheus
